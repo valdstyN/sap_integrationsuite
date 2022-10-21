@@ -1,26 +1,3 @@
-/* 
-sample payload can be produced by quering SuccessFactors OData entity PickListValueV2
-eg: ../odata/v2/PickListValueV2?$filter=PickListV2_id eq 'contractType'&$select=externalCode,optionId,label_defaultValue,label_en_US
-
-<PickListValueV2>
-  <PickListValueV2>
-    <label_en_US>Permanent</label_en_US>
-    <externalCode>1</externalCode>
-    <optionId>2015</optionId>
-    <label_defaultValue>Permanent</label_defaultValue>
-    <PickListV2_id>contractType</PickListV2_id>
-  </PickListValueV2>
-  <PickListValueV2>
-    <label_en_US>Fixed Term Contract</label_en_US>
-    <externalCode>2</externalCode>
-    <optionId>2016</optionId>
-    <label_defaultValue>Fixed Term Contract</label_defaultValue>
-    <PickListV2_id>contractType</PickListV2_id>
-  </PickListValueV2>
-  </PickListValueV2>
-
-*/
-
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
 import groovy.xml.*   
@@ -48,3 +25,25 @@ def Message processData(Message message) {
         return message;
 }
     
+/* 
+sample payload can be produced by quering SuccessFactors OData entity PickListValueV2
+eg: ../odata/v2/PickListValueV2?$filter=PickListV2_id eq 'contractType'&$select=externalCode,optionId,label_defaultValue,label_en_US
+
+<PickListValueV2>
+  <PickListValueV2>
+    <label_en_US>Permanent</label_en_US>
+    <externalCode>1</externalCode>
+    <optionId>2015</optionId>
+    <label_defaultValue>Permanent</label_defaultValue>
+    <PickListV2_id>contractType</PickListV2_id>
+  </PickListValueV2>
+  <PickListValueV2>
+    <label_en_US>Fixed Term Contract</label_en_US>
+    <externalCode>2</externalCode>
+    <optionId>2016</optionId>
+    <label_defaultValue>Fixed Term Contract</label_defaultValue>
+    <PickListV2_id>contractType</PickListV2_id>
+  </PickListValueV2>
+  </PickListValueV2>
+
+*/
