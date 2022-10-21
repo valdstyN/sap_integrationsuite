@@ -45,5 +45,4 @@ eg: ../odata/v2/PickListValueV2?$filter=PickListV2_id eq 'contractType'&$select=
     <PickListV2_id>contractType</PickListV2_id>
   </PickListValueV2>
   </PickListValueV2>
-
 */
