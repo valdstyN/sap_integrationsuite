@@ -17,7 +17,7 @@ def Message processData(Message message) {
         // to retrieve a value (can be used in a later script)
         HashMap<String,String> picklist2 = new HashMap<>()
         picklist2 = message.properties.get("picklist")
-        def extCode = "3" // this can be passed as a property/headder
+        def extCode = "1" // this can be passed as a property/headder
         def r = picklist2.get(extCode)
         println r[0] // output the label
         println r[1] // output the optionId
